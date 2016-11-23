@@ -14,7 +14,7 @@ echo
 jar --create --file demo-client/target/$JAR_NAME \
 	--main-class=org.ecuadorjug.client.DemoClient -C demo-client/target/classes .
 
-mkdir -p mods
+mkdir -p $MODS_DIR
 
 cp demo-client/target/demo-client-1.0.jar  $MODS_DIR
 cp demo-model/person/target/person-1.0-SNAPSHOT.jar  $MODS_DIR
