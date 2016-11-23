@@ -3,7 +3,7 @@ package org.ecuadorjug.model.products;
 import java.io.Serializable;
 
 /**
- * Created by kleber on 11/20/16.
+ * Created by Kleber Ayala on 11/20/16.
  */
 public class Loan implements Serializable {
 

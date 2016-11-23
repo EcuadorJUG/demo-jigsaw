@@ -9,19 +9,35 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-service</artifactId>
-    <name>Jigsaw JUG DEMO ::: Services</name>
+    <artifactId>demo-client</artifactId>
+    <name>Jigsaw JUG DEMO ::: Client</name>
 
     <dependencies>
+        <dependency>
+            <groupId>org.ecuadorjug</groupId>
+            <artifactId>demo-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.ecuadorjug</groupId>
             <artifactId>person</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.ecuadorjug</groupId>
-            <artifactId>demo-service-spi</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.ecuadorjug.client.DemoClient</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

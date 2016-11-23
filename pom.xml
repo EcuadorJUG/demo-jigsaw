@@ -8,7 +8,7 @@
     <artifactId>demo-jigsaw</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Jigsaw JUG DEMO : Modules</name>
+    <name>Jigsaw JUG DEMO </name>
 
     <packaging>pom</packaging>
 
@@ -16,6 +16,8 @@
         <module>demo-model</module>
         <module>demo-service</module>
         <module>demo-service-impl</module>
+        <module>demo-client</module>
+        <module>demo-service-spi</module>
     </modules>
 
 

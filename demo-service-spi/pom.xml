@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-service</artifactId>
-    <name>Jigsaw JUG DEMO ::: Services</name>
+    <artifactId>demo-service-spi</artifactId>
+    <name>Jigsaw JUG DEMO ::: Service Provider Interface</name>
 
     <dependencies>
         <dependency>
@@ -18,10 +18,6 @@
             <artifactId>person</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.ecuadorjug</groupId>
-            <artifactId>demo-service-spi</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
+
 </project>

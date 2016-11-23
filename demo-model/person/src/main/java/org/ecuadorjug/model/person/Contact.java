@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by kleber on 11/20/16.
+ * Created by Kleber Ayala on 11/20/16.
  */
 public class Contact implements Serializable {
 

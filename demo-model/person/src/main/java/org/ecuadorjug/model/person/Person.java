@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by kleber on 11/20/16.
+ * Created by Kleber Ayala on 11/20/16.
  */
 public class Person implements Serializable {
 
@@ -18,6 +18,15 @@ public class Person implements Serializable {
     private List<Contact> contactList;
     private List<Account> accountList;
 
+    public Person() {
+
+    }
+
+    public Person(String id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public String getId() {
         return id;
@@ -58,4 +67,25 @@ public class Person implements Serializable {
     public void setAccountList(List<Account> accountList) {
         this.accountList = accountList;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id='" + id + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        return id.equals(person.id);
+    }
+
+
 }
